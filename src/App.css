@@ -1,10 +1,12 @@
 * {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: content-box;
 }
 
 body {
-	--slack-color: #3f0f40;
+	--slack-color: #4b424d;
+	background-color: #eee9e5;
 }
 
 .app__body {
