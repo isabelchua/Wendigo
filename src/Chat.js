@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Chat.css";
 import { useParams } from "react-router-dom";
-import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
+
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import db from "./firebase";
 
@@ -12,6 +12,10 @@ function Chat() {
 	const { roomId } = useParams();
 	const [roomDetails, setRoomDetails] = useState(null);
 	const [roomMessages, setRoomMessages] = useState([]);
+
+	// if (roomId === null) {
+	// 	console.log(object);
+	// }
 
 	useEffect(() => {
 		if (roomId) {
@@ -38,7 +42,6 @@ function Chat() {
 					<h4 className="chat__channelName">
 						{/* <b>{roomId}</b> */}
 						<strong>#{roomDetails?.name}</strong>
-						<StarBorderOutlinedIcon />
 					</h4>
 				</div>
 				<div className="chat__headerRight">

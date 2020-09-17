@@ -2,7 +2,8 @@
 	flex: 0.7;
 	flex-grow: 1;
 	overflow-y: scroll;
-	padding-bottom: 150px;
+	padding-bottom: 250px;
+	margin-bottom: 115px;
 }
 
 .chat__header {

@@ -1,15 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
 * {
 	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Ubuntu", sans-serif;
 	box-sizing: content-box;
+	line-height: 160%;
 }
 
 body {
-	--slack-color: #4b424d;
-	background-color: #eee9e5;
+	--slack-color: #454257;
+	background-color: #ece7e2;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .app__body {
 	display: flex;
 	height: 100vh;
+}
+
+.chat {
+	color: #575757;
+	overflow: scroll;
+	padding-bottom: 4em;
+	/* height: 100%; */
+}
+
+@media only screen and (max-width: 600px) {
+	.sidebar {
+		display: none;
+	}
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px 0;
+		background-color: var(--slack-color);
+		color: white;
+	}
+
+	.login__container {
+		padding: 50px !important;
+	}
+
+	.login__container > Button {
+		padding: 8px 15px;
+		font-size: 1.1em !important;
+	}
+
+	.message__timestamp {
+		font-size: 12px !important;
+	}
+
+	.header__search > input {
+		min-width: 25vw !important;
+	}
 }

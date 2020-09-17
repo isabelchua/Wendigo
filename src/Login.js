@@ -8,7 +8,7 @@ import { actionTypes } from "./reducer";
 // import { actionTypes } from "./reducer";
 
 function Login() {
-	const [state, dispatch] = useStateValue();
+	const [, dispatch] = useStateValue();
 
 	const signIn = e => {
 		auth
@@ -26,14 +26,12 @@ function Login() {
 	};
 
 	return (
-		<div className="login">
-			<div className="login__container">
-				<img
-					src="https://emergent-enterprise.com/wp-content/uploads/2019/01/slacklogo-620x350.png"
-					alt=""
-				/>
-				<h1>Sign in</h1>
-				<Button onClick={signIn}>Sign in with google</Button>
+		<div id="login" className="login">
+			<div className="login__container modal-content">
+				<img src="https://i.imgur.com/l6soTSl.png" alt="" />
+				<h1>Wendigo Chat</h1>
+				<p>Make channels! Interact with people!</p>
+				<Button onClick={signIn}>Sign in with Google</Button>
 			</div>
 		</div>
 	);
