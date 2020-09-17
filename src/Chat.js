@@ -40,7 +40,6 @@ function Chat() {
 			<div className="chat__header">
 				<div className="chat__headerLeft">
 					<h4 className="chat__channelName">
-						{/* <b>{roomId}</b> */}
 						<strong>#{roomDetails?.name}</strong>
 					</h4>
 				</div>

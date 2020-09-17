@@ -8,7 +8,7 @@
 }
 
 body {
-	--slack-color: #454257;
+	--slack-color: #52586b;
 	background-color: #ece7e2;
 	height: 100vh;
 	overflow: hidden;
@@ -26,6 +26,18 @@ body {
 	/* height: 100%; */
 }
 
+@media only screen and (max-width: 1480px) {
+	.chatInput > form > input {
+		width: 75% !important;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	.chatInput > form > input {
+		width: 70% !important;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	.sidebar {
 		display: none;
@@ -37,6 +49,10 @@ body {
 		padding: 10px 0;
 		background-color: var(--slack-color);
 		color: white;
+	}
+
+	.chatInput > form > input {
+		width: 90% !important;
 	}
 
 	.login__container {

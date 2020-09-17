@@ -1,6 +1,6 @@
 .login {
 	height: 100vh;
-	background: #f8f8f8;
+	background: #f3f1f1;
 	display: grid;
 	place-items: center;
 	color: #4b4b4b;
@@ -21,11 +21,39 @@
 	margin-bottom: 30px;
 }
 
-.login__container > Button {
-	margin-top: 40px;
+.button-wrap {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px !important;
+}
+
+.button-wrap > Button {
+	margin-top: 10px;
 	text-transform: inherit !important;
-	background-color: #4482df !important;
+	text-align: left;
 	padding: 8px 15px;
-	font-size: 1.2em;
+
+	font-size: 1em;
 	color: white;
+	display: flex;
+	justify-content: left;
+	width: 280px;
+}
+
+.google {
+	background-color: #e43b3b !important;
+}
+
+.fb {
+	background-color: #4482df !important;
+}
+
+.align-c {
+	margin: 0 25px 0px 0;
+	padding: 0 0px 4px 0;
+}
+
+.line {
+	border-right: 1px solid rgba(255, 255, 255, 0.24);
+	padding-right: 10px;
 }
